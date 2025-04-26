@@ -1,26 +1,68 @@
 # KeywordMatcher
-GUI (Swing) Java application that matches keywords from a file against a job description / phrases to identify relevant keywords/skills. Includes file validation, keyword parsing, and occurrence tracking, with plans for future GUI integration. Ideal for streamlining job application processes.
 
-## Running the project locally
-Clone the repo locally. An executable jar file will eventually become available in the `dist` folder. You can run the jar file directly if you don't want to run the project in an IDE.
+**KeywordMatcher** is a simple, efficient desktop GUI tool built in Java using Swing. It helps job seekers quickly identify whether a job description aligns with their personal skills and keywords. This project automates the manual filtering process, saving hours during job applications by instantly matching keywords against job descriptions.
 
+---
 
-### Adding Keywords
-An input box exists on the top level corner of the app. Start by typing 
-your keyword followed by the + button to add it to the list. The keyword will be added to the list of keywords and will be highlighted in the text area below.
-![Screenshot 2025-04-09 at 10.34.43 PM.png](KeywordMatcher/resources/Screenshot%202025-04-09%20at%2010.34.43%E2%80%AFPM.png)
+## Features
 
-_You can always remove keywords later by selecting the keyword and pressing the - button._
+- Real-time keyword matching and highlighting
+- Count of keyword occurrences in job descriptions
+- Easy-to-use keyword add/remove interface
+- User-friendly Java Swing GUI
+- Saves time by automating job application filtering
 
-### Adding Job Description
-Simply copy the text and paste it into this box
+---
 
-### Making the comparison happen
-Once all steps are completed click the "Button". Each keyword that was found
-along with the number of times it appeared will be re-rendered and displayd.
+## Getting Started
 
-![Screenshot 2025-04-10 at 5.39.57 PM.png](KeywordMatcher/resources/Screenshot%202025-04-10%20at%205.39.57%E2%80%AFPM.png)
+### 1. Clone the Repository
+```bash
+git clone https://github.com/Bradltr95/KeywordMatcher.git
+cd KeywordMatcher
+```
 
+### 2. Run the Application
+Open the project in your IDE of choice (e.g., IntelliJ IDEA or Eclipse) and run the App.java file located in:
+```
+/src/main/java/com/bradltr/keywordmatcher/App.java
+```
 
+Additionally, you can run the following command from the readme.
 
+```bash
+cd keywordmatcher/src/main/java/com/bradltr/keywordmatcher  
+javac App.java
+java App.java
+```
 
+## How It Works
+### Add Keywords
+Use the input field in the top-left corner.
+
+Type your keyword and click the ➕ button.
+
+Keywords will be added to the list and highlighted below.
+
+You can remove a keyword by selecting it and clicking the ➖ button.
+
+### Paste a Job Description
+Paste the job description text into the main text box.
+
+### Match and Analyze
+Click the "Match" button to compare the job description against your keyword list.
+
+The app will:
+
+Highlight matched keywords
+
+Display a count of how many times each appears
+
+## Project Status
+In Progress — Actively maintained with plans for:
+
+Keyword list persistence
+
+Drag-and-drop job description support
+
+Exporting results to PDF
